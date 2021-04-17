@@ -12,7 +12,7 @@ import IndexRow from './IndexRow';
 function Page(data) {
     var items = data.blogs
     var paginateDisp = data.display
-//console.log( items )
+console.log( items )
     return (
     <Layout>
       <Head><title key="title">{data.site_name}</title></Head>      
@@ -43,7 +43,7 @@ function Page(data) {
     )
   }
 export const getStaticProps = async context => {
-  var url = process.env.BASE_URL+`/api/test.php`
+  var url = process.env.BASE_URL+`/api/posts.php`
   const res = await fetch( url );
   var blogs = await res.json();
 // console.log(blogs)

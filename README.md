@@ -6,7 +6,7 @@
 
  date    : 2021/04/16
 
- update  :
+ update  : 2021/04/18
 
 ***
 ### Summary
@@ -31,6 +31,10 @@ npm install
 * Start :
 
 yarn dev
+
+* SSG output
+
+yarn deploy
 
 ***
 ### Blog : 

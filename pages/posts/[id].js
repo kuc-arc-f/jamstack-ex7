@@ -48,7 +48,7 @@ console.log(blog)
 //
 export const getStaticPaths = async () => {
   const res = await fetch(
-    process.env.BASE_URL + `/api/test.php`
+    process.env.BASE_URL + `/api/posts.php`
   );
   const repos = await res.json();
   var paths = []
@@ -66,7 +66,7 @@ export const getStaticPaths = async () => {
 };
 export const getStaticProps = async context => {
   const postId = context.params.id
-  var url = process.env.BASE_URL + `/api/test.php`
+  var url = process.env.BASE_URL + `/api/posts.php`
   const res = await fetch( url);
   var blog = await res.json(); 
   var item  = LibCms.get_show_item( blog, String(postId) )
