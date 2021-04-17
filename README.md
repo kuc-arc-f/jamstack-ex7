@@ -39,6 +39,9 @@ yarn deploy
 ***
 ### Blog : 
 
+* Headless CMSで、wordpress API を使用する例
+
+https://zenn.dev/knaka0209/books/4ee53bad905ec2/viewer/36a219
 
 ***
 
