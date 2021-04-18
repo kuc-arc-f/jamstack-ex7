@@ -31,7 +31,7 @@ console.log(blog)
       <hr />                 
     </div>
     <style>{`
-      div#post_item > p > img{
+      div#post_item img{
         max-width : 100%;
         height : auto;
       }
